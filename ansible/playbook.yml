@@ -15,6 +15,5 @@
          /opt/tomcat/bin/shutdown.sh 
          /opt/tomcat/bin/startup.sh
       
-        name: tomcat
-        state: restarted
+        
 
