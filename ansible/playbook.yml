@@ -11,8 +11,10 @@
         remote_src: no
 
     - name: Restart Tomcat
-      shell: /opt/tomcat/bin/shutdown.sh && /opt/tomcat/bin/startup.sh
-      service:
+      shell: |
+         /opt/tomcat/bin/shutdown.sh 
+         /opt/tomcat/bin/startup.sh
+      
         name: tomcat
         state: restarted
 
